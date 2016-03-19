@@ -18,7 +18,8 @@ namespace Lecture3
 
             
             int someNumber = value ?? default(int);
-            
+            Console.WriteLine($"someNumber = {someNumber}");
+
         }
     }
 }
