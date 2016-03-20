@@ -19,11 +19,13 @@ namespace Lecture3
             {
                 Console.Write($"Enter some character or characters>");
                 value = Console.ReadLine();
-
+                
+                //Using Ternary if value is "", convert to null
                 value = value == "" ? null : value;
 
                 Console.WriteLine($"Value = {value}");
             }
+            //Null Coalescing
             value = value ?? "Null";
             Console.WriteLine($"Value = {value}");
         }
