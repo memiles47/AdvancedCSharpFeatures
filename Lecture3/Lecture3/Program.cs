@@ -1,7 +1,9 @@
 ﻿using System;
 
 /*
-Lesson Three of... I'll fill this in later...
+Lesson Three: Advanced C# Features
+Null Coalescing: It is much like the ternary expression
+I use both in this little program
 */
 
 namespace Lecture3
