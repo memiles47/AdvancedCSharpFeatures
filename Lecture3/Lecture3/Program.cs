@@ -14,18 +14,17 @@ namespace Lecture3
     {
         static void Main(string[] args)
         {
-            string value;
-
-            Console.Write($"Enter some character or characters>");
-            value = Console.ReadLine();
-
-            if (value == "")
+            string value="";
+            while (value != null)
             {
-                value = null;
+                Console.Write($"Enter some character or characters>");
+                value = Console.ReadLine();
+
+                value = value == "" ? null : value;
+
+                Console.WriteLine($"Value = {value}");
             }
-
             value = value ?? "Null";
-
             Console.WriteLine($"Value = {value}");
         }
     }
