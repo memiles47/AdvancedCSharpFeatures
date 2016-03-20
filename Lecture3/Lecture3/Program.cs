@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 /*
 Lesson Three of... I'll fill this in later...
@@ -25,8 +21,7 @@ namespace Lecture3
 
                 Console.WriteLine($"Value = {value}");
             }
-            //Null Coalescing
-            value = value ?? "Null";
+            //Null Coalescing within the print statement
             Console.WriteLine($"Value = {value ?? "Null"}");
         }
     }
