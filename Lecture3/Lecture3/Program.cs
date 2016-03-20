@@ -14,12 +14,19 @@ namespace Lecture3
     {
         static void Main(string[] args)
         {
-            int? value = null;
+            string value;
 
-            
-            int someNumber = value ?? default(int);
-            Console.WriteLine($"someNumber = {someNumber}");
+            Console.Write($"Enter some character or characters>");
+            value = Console.ReadLine();
 
+            if (value == "")
+            {
+                value = null;
+            }
+
+            value = value ?? "Null";
+
+            Console.WriteLine($"Value = {value}");
         }
     }
 }
