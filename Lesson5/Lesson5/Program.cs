@@ -39,12 +39,20 @@ namespace Lesson5
             {
                 return _name;
             }
-
             set
             {
                 _name = value;
             }
         }
+    }
+
+    #endregion
+
+    #region Class with Auto Properties
+
+    public class Person_Auto
+    {
+        public string name { get; set; }
     }
 
     #endregion
