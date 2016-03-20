@@ -27,7 +27,7 @@ namespace Lecture3
             }
             //Null Coalescing
             value = value ?? "Null";
-            Console.WriteLine($"Value = {value}");
+            Console.WriteLine($"Value = {value ?? "Null"}");
         }
     }
 }
