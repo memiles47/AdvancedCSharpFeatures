@@ -1,8 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+/*
+Lesson Three: Advanced C# Features
+Null Coalescing: It is much like the ternary expression
+I use both in this little program
+*/
 
 namespace Lecture3
 {
@@ -10,22 +12,19 @@ namespace Lecture3
     {
         static void Main(string[] args)
         {
-            int? value = null;
-            int someEntry;
-            string s = "";
-
-            Console.Write($"Enter anything> \"Exit\" to quit");
-            while (s != "exit")
+            string value="";
+            while (value != null)
             {
-                s = Console.ReadLine().ToLower();
-                if (s != "exit")
-                {
-                    someEntry = int.TryParse(s, out value) ? value : default(int);
-                }
+                Console.Write($"Enter some character or characters>");
+                value = Console.ReadLine();
+                
+                //Using Ternary if value is "", convert to null
+                value = value == "" ? null : value;
 
+                Console.WriteLine($"Value = {value}");
             }
-            someNumber = value ?? default(int);
-            
+            //Null Coalescing within the print statement
+            Console.WriteLine($"Value = {value ?? "Null"}");
         }
     }
 }
