@@ -11,9 +11,20 @@ namespace Lecture3
         static void Main(string[] args)
         {
             int? value = null;
+            int someEntry;
+            string s = "";
 
-            
-            int someNumber = value ?? default(int);
+            Console.Write($"Enter anything> \"Exit\" to quit");
+            while (s != "exit")
+            {
+                s = Console.ReadLine().ToLower();
+                if (s != "exit")
+                {
+                    someEntry = int.TryParse(s, out value) ? value : default(int);
+                }
+
+            }
+            someNumber = value ?? default(int);
             
         }
     }
