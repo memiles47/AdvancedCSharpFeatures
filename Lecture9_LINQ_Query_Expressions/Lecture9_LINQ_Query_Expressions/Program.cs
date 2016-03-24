@@ -16,18 +16,38 @@ namespace Lecture9_LINQ_Query_Expressions
 
             #region Simple foreach loop
 
-            var results = new List<string>();
+            var results1 = new List<string>();
             foreach (string name in names)
             {
                 if (name.StartsWith("B"))
                 {
-                    results.Add(name.ToUpper());
+                    results1.Add(name.ToUpper());
                 }
             }
 
             #endregion
 
-            Console.WriteLine($"{string.Join(" ", results)}");
+            #region Nested linq extension methods
+
+            var results2 = names.Where(n => n.StartsWith("B")).Select(n => n.ToUpper());
+
+            #endregion
+
+            #region linq query expression
+
+            var results3 = from n in names where n.StartsWith("B") select n.ToUpper();
+
+            #endregion
+
+            #region linq query with any
+
+
+
+            #endregion
+
+            Console.WriteLine($"{string.Join(" ", results1)}");
+            Console.WriteLine($"{string.Join(" ", results2)}");
+            Console.WriteLine($"{string.Join(" ", results3)}");
         }
     }
 
