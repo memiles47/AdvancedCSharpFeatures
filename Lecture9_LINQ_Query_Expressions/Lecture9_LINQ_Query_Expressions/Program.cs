@@ -12,7 +12,7 @@ namespace Lecture9_LINQ_Query_Expressions
     {
         public static void Demo()
         {
-            string[] names = { "Billy", "Bob", "Brad", "David", "Duncan", "Everett", "Hanna", "Mark", "Michael", "Theo", "Tom", "Victor", "Wendy" };
+            string[] names = { "Billy", "Michael", "Brad", "David", "Duncan", "Everett", "Hanna", "Mark", "Bob", "Theo", "Tom", "Victor", "Wendy" };
 
             #region Simple foreach loop
 
