@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+Lecture 6: Linq queries
+*/
+
 namespace Lecture9_LINQ_Query_Expressions
 {
     #region
@@ -12,7 +16,7 @@ namespace Lecture9_LINQ_Query_Expressions
     {
         public static void Demo()
         {
-            string[] names = { "Billy", "Bob", "Brad", "David", "Duncan", "Everett", "Hanna", "Mark", "Michael", "Theo", "Tom", "Victor", "Wendy" };
+            string[] names = { "Billy", "Bob", "Michael", "David", "Duncan", "Everett", "Hanna", "Mark", "Brad", "Theo", "Tom", "Victor", "Wendy" };
 
             #region Simple foreach loop
 

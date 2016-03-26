@@ -94,6 +94,9 @@ namespace Lecture6_StringMethods
             result = StringMethods.GetFullName_ExplicitEmpty("    ", "Miles");
             Console.WriteLine($"Explicit Empty: {result}");
 
+            result = StringMethods.GetFullName_ExplicitEmpty("Michael", "Miles");
+            Console.WriteLine($"Explicit Empty: {result}");
+
             #endregion
 
             #region IsNullOrWhiteSpace check
