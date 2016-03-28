@@ -43,13 +43,18 @@ namespace Lecture9_LINQ_Query_Expressions
 
             #region linq query with any
 
-
+            var results4 = (
+                from n in names
+                where n.StartsWith("B")
+                select n)
+                .Any() ? "At least one name starts with \"B\"" : "No names start with\"B\"";
 
             #endregion
 
             Console.WriteLine($"{string.Join(" ", results1)}");
             Console.WriteLine($"{string.Join(" ", results2)}");
             Console.WriteLine($"{string.Join(" ", results3)}");
+            Console.WriteLine($"{string.Join(" ", results4)}");
         }
     }
 
