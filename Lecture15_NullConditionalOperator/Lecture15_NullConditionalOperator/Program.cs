@@ -27,8 +27,9 @@ namespace Lecture15_NullConditionalOperator
 
         private string Truncate_Padded(string value, int length)
         {
-            //return value?.Substring(0, Math.Min(value.Length, length)).PadRight(13);
-            return value?.Substring(0, Math.Min(value.Length, length)).PadRight(Math.Max(value.Length - length, 0));
+            //return value?.Substring(0, Math.Min(value.Length, length)).PadRight(Math.Max(value.Length - length, 0));
+            //return value?.Substring(0, Math.Min(value.Length, length)).PadRight(Math.Max(value.Length, 0));
+            return value?.Substring(0, Math.Min(value.Length, length)).PadRight(value.Length);
         }
 
         #endregion
