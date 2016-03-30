@@ -27,6 +27,7 @@ namespace Lecture15_NullConditionalOperator
 
         private string Truncate_Padded(string value, int length)
         {
+            //return value?.Substring(0, Math.Min(value.Length, length)).PadRight(13);
             return value?.Substring(0, Math.Min(value.Length, length)).PadRight(Math.Max(value.Length - length, 0));
         }
 
@@ -62,7 +63,7 @@ namespace Lecture15_NullConditionalOperator
             #region Padded Truncate Call
 
             string name2 = Truncate_Padded("Michael Miles", 9);
-            Console.WriteLine($"{name2 ?? "The name is null"}, Length = {name2.Length}");
+            Console.WriteLine($"{name2 ?? "The name is null"}, Length = {name2?.Length ?? 0}");
 
             #endregion
 
