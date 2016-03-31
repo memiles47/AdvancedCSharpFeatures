@@ -69,7 +69,7 @@ namespace Lecture15_NullConditionalOperator
             #endregion
 
             #region Length Check
-
+            //This was combined with the Padded Truncate Call
             #endregion
         }
 
