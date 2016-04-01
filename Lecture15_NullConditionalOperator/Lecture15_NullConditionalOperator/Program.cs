@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/*
+Lecture 15: Null Conditional Operator
+*/
+
 namespace Lecture15_NullConditionalOperator
 {
     public class NullConditionalOperator
