@@ -81,6 +81,7 @@ namespace Lecture15_NullConditionalOperator
     {
         static void Main(string[] args)
         {
+            //Create new instance of the NullConditionalOperator Class and call the Demo method
             NullConditionalOperator MyNCO = new NullConditionalOperator();
             MyNCO.Demo();
 
