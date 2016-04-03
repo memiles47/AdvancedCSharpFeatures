@@ -11,6 +11,7 @@ namespace Lecture15_NullConditionalOperator
     {
         #region Truncate Method
 
+        //Truncating a string ignoring possible null strings which will cause an error
         private string Truncate(string value, int length)
         {
             return value.Substring(0, Math.Min(value.Length, length));
