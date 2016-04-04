@@ -37,7 +37,10 @@ namespace Lecture15_NullConditionalOperator
 
         #endregion
 
+        //More experience needed below
         #region Picknonnull Extension Method
+
+        //These methods will have to wait until I have much more experience
 
         #endregion
 
