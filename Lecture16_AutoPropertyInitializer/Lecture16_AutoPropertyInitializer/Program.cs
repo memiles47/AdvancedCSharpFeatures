@@ -8,19 +8,28 @@ namespace Lecture16_AutoPropertyInitializer
 {
     #region class with Public Field
 
-
+    public class Person_With_Field
+    {
+        public string name = "Michael Miles";
+    }
 
     #endregion
 
     #region class with Auto Property Initializer
 
-
+    public class Person
+    {
+        public string name1 { get; set; } = "Michael Miles";
+    }
 
     #endregion
 
     #region Immutable class with Auto Property Initializer
 
-
+    public class Imutable_Person
+    {
+        public string name2 { get; } = "Michael Miles";
+    }
 
     #endregion
 
@@ -30,8 +39,10 @@ namespace Lecture16_AutoPropertyInitializer
 
     #endregion
 
-    public static class AutoPropertyInitializer
+    public class AutoPropertyInitializer
+
     {
+
         #region Person Factory Property
 
 
@@ -40,7 +51,18 @@ namespace Lecture16_AutoPropertyInitializer
 
         public static void Demo()
         {
-            //Access Factory method
+            #region Use Person_With_Field
+
+            #endregion
+
+            #region Use Person Class
+
+            #endregion
+
+            #region MyRegion
+
+            #endregion
+
 
         }
     }
