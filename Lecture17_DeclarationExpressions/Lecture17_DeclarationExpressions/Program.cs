@@ -13,7 +13,7 @@ namespace Lecture17_DeclarationExpressions
         {
             string input;
 
-            #region MyRegion
+            #region While loop with two declarations, one outside the loop
 
             //input = Console.Read();
             //while (input != 10)
