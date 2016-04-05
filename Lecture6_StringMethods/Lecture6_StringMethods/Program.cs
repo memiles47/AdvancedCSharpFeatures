@@ -122,6 +122,7 @@ namespace Lecture6_StringMethods
 
             #region Case Insensitive check
 
+            //This is a case insensitive check requiring much more code however is more conservative in memory usage
             Console.WriteLine($"Is this Mike? {string.Equals(result, "Mike Miles", StringComparison.OrdinalIgnoreCase)}");
 
             #endregion
