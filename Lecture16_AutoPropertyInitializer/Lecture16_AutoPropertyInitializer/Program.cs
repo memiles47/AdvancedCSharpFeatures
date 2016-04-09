@@ -37,7 +37,7 @@ namespace Lecture16_AutoPropertyInitializer
 
     public class Complex_Person
     {
-        public string userName { get; } = "Me as current User"; //Get current user
+        public string userName { get; } = "Me as current User"; //Get current user check course
     }
 
     #endregion
