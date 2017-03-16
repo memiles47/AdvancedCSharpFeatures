@@ -4,6 +4,8 @@ namespace Lecture6_StringMethods
 {
     //Testing VS 2017
     //I could not find this on the other computer
+    //Found it finally. Then I had to display it. It is amazing how
+    //quickly you can lose knowledge if you don'y use it.
 
     public static class StringMethods
     {
