@@ -3,6 +3,8 @@
 namespace Lecture6_StringMethods
 {
     //Testing VS 2017
+    //I could not find this on the other computer
+
     public static class StringMethods
     {
         #region GetFullName with explicit null check (GetFullName_ExplicitNull)
