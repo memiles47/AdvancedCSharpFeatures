@@ -3,9 +3,8 @@
 namespace Lecture6_StringMethods
 {
     //Testing VS 2017
-    //I could not find this on the other computer
-    //Found it finally. Then I had to display it. It is amazing how
-    //quickly you can lose knowledge if you don'y use it.
+    //I heard from Angie yesterday... one word 'yeah', that was it
+    //I knew this would happen but I still don't like it.
 
     public static class StringMethods
     {
